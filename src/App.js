@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import ListItems from './ListItems';
 
+
 class App extends React.Component {
   constructor(){
     super();
@@ -38,6 +39,35 @@ class App extends React.Component {
       }
     };
 
+    deleteItem = key => {
+
+      const filteredItems= this.state.items.filter(item =>
+        item.key!==key);
+      this.setState({
+        items: filteredItems
+      })
+  
+      
+    };
+
+    setUpdate = (text, key) => {
+
+      console.log("items:"+this.state.items);
+      const items = this.state.items;
+      items.map(item=>{      
+        if(item.key===key){
+          console.log(item.key +"    "+key)
+          item.text= text;
+        }
+      })
+      this.setState({
+        items: items
+      })
+      
+    };
+
+    setUpdate
+
   render(){
     return (
       <div className="App">
@@ -47,7 +77,10 @@ class App extends React.Component {
               <button type="submit">Add List</button>
             </form>
           </header>
-          <ListItems />
+          <ListItems 
+          deleteItem={this.deleteItem} 
+          items={this.state.items}
+          setUpdate={this.setUpdate} />
       </div>
      
     );
