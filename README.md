@@ -6,7 +6,9 @@
 ## General info
 This is a Todo List app. Type in a task or item or whatever you want into the input field and press Add (or hit Enter/Return). Once you've submitted your item, you will see it appear as an entry. You can keep adding item to add additional entries, edit or delete them.
 
-![Alt text](img/screen.png?raw=true "Optional Title")
+<div align="center">
+    <img src="img/screen.png" width="400px"</img> 
+</div>
 
 [Live Demo](https://msynko.github.io/react-todo/)
 
