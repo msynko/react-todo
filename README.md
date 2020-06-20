@@ -8,6 +8,7 @@ This is a Todo List app. Type in a task or item or whatever you want into the in
 
 [Live Demo](https://msynko.github.io/react-todo/)
 
+![Alt text](img/screen.png?raw=true "Optional Title")
 
 ## Technologies
 Project is created with:
